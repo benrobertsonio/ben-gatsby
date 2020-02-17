@@ -37,6 +37,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "serve:prod": "gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "postinstall": "echo \"P O S T I N S T A L L\"",
+    "preinstall": "echo \"P R E I N S T A L L\""
   }
 }
