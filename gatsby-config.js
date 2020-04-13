@@ -14,6 +14,18 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-theme-ui',
+    {
+      resolve: 'gatsby-theme-notes',
+      options: {
+        // basePath defaults to `/`
+        basePath: '/notes',
+        mdxOtherwiseConfigured: true
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -24,14 +36,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/posts`,
+        path: `${__dirname}/content/posts`,
         name: 'posts',
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
