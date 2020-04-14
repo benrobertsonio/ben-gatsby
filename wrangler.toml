@@ -1,0 +1,10 @@
+name = "my-static-site"
+type = "webpack"
+account_id = "da00ab1c3f3d1ade0e2ef7d40f87558b"
+workers_dev = true
+route = ""
+zone_id = "a2e8a2f63b43652fd5319ade4b04e151"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
