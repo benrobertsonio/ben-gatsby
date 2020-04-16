@@ -15,6 +15,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: 'gatsby-theme-micro-blog',
+      options: {
+        rootDir: __dirname
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
